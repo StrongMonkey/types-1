@@ -9,6 +9,7 @@ const (
 	MachineConfigFieldImported             = "imported"
 	MachineConfigFieldLabels               = "labels"
 	MachineConfigFieldMachineTemplateId    = "machineTemplateId"
+	MachineConfigFieldName                 = "name"
 	MachineConfigFieldNodeSpec             = "nodeSpec"
 	MachineConfigFieldRequestedHostname    = "requestedHostname"
 	MachineConfigFieldRole                 = "role"
@@ -23,6 +24,7 @@ type MachineConfig struct {
 	Imported             *bool             `json:"imported,omitempty"`
 	Labels               map[string]string `json:"labels,omitempty"`
 	MachineTemplateId    string            `json:"machineTemplateId,omitempty"`
+	Name                 string            `json:"name,omitempty"`
 	NodeSpec             *NodeSpec         `json:"nodeSpec,omitempty"`
 	RequestedHostname    string            `json:"requestedHostname,omitempty"`
 	Role                 []string          `json:"role,omitempty"`
