@@ -100,6 +100,7 @@ type MachineConfig struct {
 	MachineSpec
 	Labels      map[string]string `json:"labels"`
 	Annotations map[string]string `json:"annotations"`
+	Name        string            `json:"name"`
 }
 
 type CustomConfig struct {
